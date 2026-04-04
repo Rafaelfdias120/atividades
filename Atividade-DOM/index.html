@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade DOM</title>
+  </head>
+  <body>
+    <h1>DOM: Página interativa com JavaScript</h1>
+
+    <!-- Contador -->
+    <p id="contador">0</p>
+    <button id="incrementar">+</button>
+    <button id="decrementar">-</button>
+
+    <!-- Input de texto -->
+    <input type="text" id="texto" placeholder="Digite algo e pressione enter" />
+    <p>Caracteres: <span id="qtdCaracteres">0</span></p>
+
+    <!-- Área onde vão aparecer os textos -->
+    <div id="areaTextos"></div>
+
+    <!-- Tipo de lista -->
+    <select id="tipoLista">
+      <option value="ul">Lista não ordenada</option>
+      <option value="ol">Lista ordenada</option>
+    </select>
+
+    <button id="criarLista">Criar lista</button>
+
+    <div id="areaListas"></div>
+
+    <!-- Reset -->
+    <button id="resetar">Resetar tudo</button>
+
+    <!-- JS no lugar certo -->
+    <script src="script.js"></script>
+  </body>
+</html>
