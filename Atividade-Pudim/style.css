@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7d358;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+/* HERO */
+.hero {
+  padding: 20px;
+}
+
+.hero img {
+  max-width: 300px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* SEÇÕES */
+section {
+  padding: 30px;
+}
+
+.sobre,
+.curiosidades {
+  background: #fff3cd;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* BOTÕES */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background: #ff9800;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .hero img {
+    max-width: 200px;
+  }
+}
