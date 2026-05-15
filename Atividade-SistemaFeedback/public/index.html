@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Importante para dispositivos móveis -->
+    <title>Sistema de Feedbacks</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Barra inicial recomendada -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feedbacks de Alunos</h1>
+        </header>
+        
+        <section id="form-section">
+            <!-- O atributo 'autocomplete' ajuda o usuário a preencher mais rápido -->
+            <form action="/feedbacks/enviar" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required autocomplete="name">
+                <textarea name="comentario" placeholder="Seu comentário" required></textarea>
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="lista-section">
+            <h2>Lista de Feedbacks</h2>
+            <!-- O script.js vai preencher esta div -->
+            <div id="feedbacks-container">
+                <p>Carregando feedbacks...</p> 
+            </div>
+        </section>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
